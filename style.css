@@ -1,0 +1,36 @@
+header{
+  height: 50px;
+}
+.flex-base{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.flex-center{
+
+}
+ul.flex-center{
+  width: 200px;
+  align-items: center;
+}
+.no-padding-margin{
+  margin:0;
+  padding:0;
+}
+.list-no-style{
+  list-style:none;
+}
+.ninja{
+  color:red;
+}
+footer{
+  text-align: center;
+  list-style:none;
+  font-size:25px;
+}
+.menu-bottons>li>a{
+color:orange;
+text-decoration:none;
+cursor: crosshair;
+text-shadow: 10px 10px 10px 10px;
+}
