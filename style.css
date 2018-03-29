@@ -1,5 +1,12 @@
+
 header{
   height: 50px;
+  background-color: green;
+}
+body{
+  background-color: yellow;
+  cursor:cell;
+
 }
 .flex-base{
     display:flex;
@@ -7,10 +14,10 @@ header{
     justify-content:space-around;
 }
 .flex-center{
-
+align-items: center;
 }
 ul.flex-center{
-  width: 200px;
+  width: 500px;
   align-items: center;
 }
 .no-padding-margin{
@@ -22,15 +29,48 @@ ul.flex-center{
 }
 .ninja{
   color:red;
+  text-transform:capitalize;
+
+
 }
 footer{
   text-align: center;
   list-style:none;
   font-size:25px;
+  background-color: pink;
+
 }
 .menu-bottons>li>a{
 color:orange;
 text-decoration:none;
 cursor: crosshair;
-text-shadow: 10px 10px 10px 10px;
+text-transform: uppercase;
+animation: menu 3s infinite;
+padding-left: 10px;
+padding-right: 10px;
+
+}
+.menu-bottons>li:hover{
+  background-color: blue;
+}
+.menu-bottons>li:hover>a{
+  color: white
+}
+
+.full-height{
+  height: 100%;
+}
+@keyframes ninja {
+  0%{opacity: 1;}
+  50%{opacity: 0;}
+  100%{opacity: 1;}
+}
+@keyframes menu {
+  0%{opacity: 0;}
+  50%{opacity: 1;}
+  100%{opacity: 1;}
+}
+h1{
+  animation: ninja 0.1s infinite;
+
 }
