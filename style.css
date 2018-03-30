@@ -1,13 +1,54 @@
+#logo-title{
+  font-family: 'Kaushan Script',cursive ;
+}
 
 header{
-  height: 50px;
-  background-color: green;
-}
-body{
-  background-color: yellow;
-  cursor:cell;
+  height: 100px;
+  background-color: #F1A008;
+  border: 1px solid #FDFFFE;
 
 }
+
+*{
+  font-family: 'Monoton', cursive;}
+}
+main{
+  margin-top: 100px;
+  margin-bottom:100px;
+}
+body{
+
+  cursor:cell;
+  background-color: #F2D577;
+  border: rgb(150, 150, 150);
+
+}
+.full-height{
+  height: 70%;
+}
+.full-width{
+  width: 90%
+}
+.base-card{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border:black;
+box-shadow: 12px 12px 20px 1px rgba(1, 0, 0, .2);
+background-image:url(yellow.png);
+}
+.p-base{
+  width: 650px;
+  text-align:justify;
+  color:#A64F00;
+  margin-top: 100px;
+  /* margin-bottom: 100px;*/
+}
+.position-fix{
+  position: fixed;
+  width:100%;
+  top: 0;
+}
+
 .flex-base{
     display:flex;
     flex-direction:row;
@@ -20,6 +61,9 @@ ul.flex-center{
   width: 500px;
   align-items: center;
 }
+.flex-column{
+  flex-direction:column;
+}
 .no-padding-margin{
   margin:0;
   padding:0;
@@ -27,50 +71,57 @@ ul.flex-center{
 .list-no-style{
   list-style:none;
 }
-.ninja{
-  color:red;
-  text-transform:capitalize;
 
+
+footer{
+  text-align:center;
+  list-style:none;
+  font-size:20px;
+  background-color: #F1B404;
+  color:white;
 
 }
-footer{
-  text-align: center;
-  list-style:none;
-  font-size:25px;
-  background-color: pink;
-
+footer>ul>li:hover{
+  background-color: #2F2679;
+}
+footer>ul>li>a:hover{
+  color: #black;
+}
+.image-container{
+  width: 600px;
+  max-width: 100%;
+}
+.border-image{
+border-radius:500px;
+}
+.image-container>image{
+  max-width: 70%;
+  height:auto;
 }
 .menu-bottons>li>a{
-color:orange;
+color:#A64F00;
 text-decoration:none;
 cursor: crosshair;
 text-transform: uppercase;
-animation: menu 3s infinite;
+/*animation: menu 3s infinite;*/
 padding-left: 10px;
 padding-right: 10px;
-
 }
 .menu-bottons>li:hover{
-  background-color: blue;
+  background-color: brown;
 }
 .menu-bottons>li:hover>a{
-  color: white
+  color: #F3F3F1;
 }
 
-.full-height{
-  height: 100%;
-}
-@keyframes ninja {
-  0%{opacity: 1;}
-  50%{opacity: 0;}
-  100%{opacity: 1;}
-}
-@keyframes menu {
-  0%{opacity: 0;}
-  50%{opacity: 1;}
-  100%{opacity: 1;}
-}
+
 h1{
-  animation: ninja 0.1s infinite;
-
+  text-align: center;
+  
+}
+.flex-row-alternate{
+  flex-direction: row-reverse;
+}
+.flex-row{
+  flex-direction: row;
 }
