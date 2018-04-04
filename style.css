@@ -1,7 +1,10 @@
 #logo-title{
   font-family: 'Kaushan Script',cursive ;
 }
-
+/* les gros bloc */
+p{
+  font-family: 'Bree Serif', serif;
+}
 header{
   height: 100px;
   background-color: #F1A008;
@@ -22,13 +25,16 @@ body{
   background-color: #F2D577;
   border: rgb(150, 150, 150);
 
+
 }
-.full-height{
+  .full-height{
   height: 70%;
-}
-.full-width{
+  }
+  .full-width{
   width: 90%
-}
+  }
+
+
 .base-card{
   margin-top: 60px;
   margin-bottom: 60px;
@@ -87,6 +93,7 @@ footer>ul>li:hover{
 footer>ul>li>a:hover{
   color: #black;
 }
+
 .image-container{
   width: 600px;
   max-width: 100%;
@@ -101,7 +108,7 @@ border-radius:500px;
 .menu-bottons>li>a{
 color:#A64F00;
 text-decoration:none;
-cursor: crosshair;
+cursor:url (mini-banana.cur), auto;
 text-transform: uppercase;
 /*animation: menu 3s infinite;*/
 padding-left: 10px;
@@ -117,11 +124,34 @@ padding-right: 10px;
 
 h1{
   text-align: center;
-  
+
 }
 .flex-row-alternate{
   flex-direction: row-reverse;
 }
 .flex-row{
   flex-direction: row;
+}
+.element-style {
+    margin-top: 200px;
+}
+#game-container{
+  display: flex;
+  flex-direction:row;
+}
+#game-container>div{
+  width:50px;
+  height:50px;
+  background-color:yellow;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.green-color{
+  background-color: green !important;
+  background-image: url(apple.png)!important;
+
+}
+.red-color{
+  background-color: orange !important;
+  background-image: url(bananagame1.png)!important;
 }
